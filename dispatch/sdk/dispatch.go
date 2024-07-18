@@ -75,7 +75,6 @@ func (s *Server) QueryGatewayHandler(c *gin.Context) {
 	queryGateway.B3 = true
 	queryGateway.B4 = true
 	queryGateway.B5 = true
-	queryGateway.B6 = true
 
 	reqdata, err := pb.Marshal(queryGateway)
 	if err != nil {

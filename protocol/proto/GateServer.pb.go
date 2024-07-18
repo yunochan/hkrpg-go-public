@@ -75,7 +75,6 @@ type GateServer struct {
 	IDPGAEJDPPD     string   `protobuf:"bytes,1686,opt,name=IDPGAEJDPPD,proto3" json:"IDPGAEJDPPD,omitempty"`
 	GMAEPOPPCEH     string   `protobuf:"bytes,434,opt,name=GMAEPOPPCEH,proto3" json:"GMAEPOPPCEH,omitempty"`
 	B1              bool     `protobuf:"varint,9,opt,name=b1,proto3" json:"b1,omitempty"`
-	B6              bool     `protobuf:"varint,1739,opt,name=b6,proto3" json:"b6,omitempty"`
 	Retcode         uint32   `protobuf:"varint,8,opt,name=retcode,proto3" json:"retcode,omitempty"`
 	HNGHBANBMHF     string   `protobuf:"bytes,715,opt,name=HNGHBANBMHF,proto3" json:"HNGHBANBMHF,omitempty"`
 	AIODAJFAGPA     string   `protobuf:"bytes,142,opt,name=AIODAJFAGPA,proto3" json:"AIODAJFAGPA,omitempty"`
@@ -461,13 +460,6 @@ func (x *GateServer) GetGMAEPOPPCEH() string {
 func (x *GateServer) GetB1() bool {
 	if x != nil {
 		return x.B1
-	}
-	return false
-}
-
-func (x *GateServer) GetB6() bool {
-	if x != nil {
-		return x.B6
 	}
 	return false
 }
